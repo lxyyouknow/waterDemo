@@ -1,0 +1,25 @@
+<svg width="420" height="40" viewBox="0 0 420 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="topGlow" x1="0" y1="20" x2="420" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4BE8FF"/>
+      <stop offset="0.52" stop-color="#7A7DFF"/>
+      <stop offset="1" stop-color="#FF4DDA"/>
+    </linearGradient>
+    <linearGradient id="topBody" x1="210" y1="0" x2="210" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17255E"/>
+      <stop offset="1" stop-color="#0B1237"/>
+    </linearGradient>
+    <filter id="shelfGlow" x="0" y="0" width="420" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#shelfGlow)">
+    <rect x="8" y="12" width="404" height="14" rx="7" fill="url(#topBody)"/>
+    <rect x="8" y="17" width="404" height="8" rx="4" fill="url(#topGlow)" fill-opacity="0.9"/>
+    <rect x="8" y="12" width="404" height="2" rx="1" fill="white" fill-opacity="0.38"/>
+  </g>
+</svg>

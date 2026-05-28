@@ -1,0 +1,25 @@
+<svg width="430" height="96" viewBox="0 0 430 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frameBody" x1="215" y1="8" x2="215" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C2558"/>
+      <stop offset="1" stop-color="#0A0E2C"/>
+    </linearGradient>
+    <linearGradient id="frameGlow" x1="28" y1="52" x2="402" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#47F2FF"/>
+      <stop offset="0.55" stop-color="#FFD05F"/>
+      <stop offset="1" stop-color="#FF5DE5"/>
+    </linearGradient>
+    <filter id="bottomGlow" x="0" y="0" width="430" height="96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#bottomGlow)">
+    <path d="M18 22L44 8H386L412 22V74L388 88H42L18 74V22Z" fill="url(#frameBody)" stroke="#76ECFF" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="78" y="44" width="274" height="10" rx="5" fill="url(#frameGlow)"/>
+    <rect x="90" y="47" width="250" height="4" rx="2" fill="white" fill-opacity="0.45"/>
+  </g>
+</svg>

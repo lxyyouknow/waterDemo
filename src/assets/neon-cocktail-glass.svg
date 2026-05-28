@@ -1,0 +1,30 @@
+<svg width="96" height="196" viewBox="0 0 96 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glowOuter" x="0" y="0" width="96" height="196" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="glassStroke" x1="16" y1="12" x2="81" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9FBFF"/>
+      <stop offset="0.45" stop-color="#8CF4FF"/>
+      <stop offset="1" stop-color="#78BFFF"/>
+    </linearGradient>
+    <linearGradient id="innerSheen" x1="25" y1="20" x2="72" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#glowOuter)">
+    <path d="M24 18H72" stroke="url(#glassStroke)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M24 20C24 18.3431 25.3431 17 27 17H69C70.6569 17 72 18.3431 72 20V145C72 152.18 66.1797 158 59 158H37C29.8203 158 24 152.18 24 145V20Z" stroke="url(#glassStroke)" stroke-width="3.5"/>
+    <path d="M36 158H60" stroke="url(#glassStroke)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M48 158V183" stroke="url(#glassStroke)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M33 186H63" stroke="url(#glassStroke)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M29 24V143C29 147.971 33.0294 152 38 152" stroke="url(#innerSheen)" stroke-width="2.4" stroke-linecap="round"/>
+    <ellipse cx="48" cy="186" rx="17" ry="4.5" fill="#66EEFF" fill-opacity="0.14"/>
+  </g>
+</svg>
